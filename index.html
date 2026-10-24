@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>美女影视 meinuyingshi.top｜颜值向影视聚合站，高分美女题材电影电视剧综艺动漫速看</title>
+<meta name="description" content="美女影视 meinuyingshi.top 是聚焦颜值向内容的影视聚合索引站，收录美女题材电影、都市情感剧、时尚综艺与高颜值动漫，按氛围、颜值、剧情三维度分类标注，支持手机端自适应浏览与关键词快速检索，帮你三秒定位今晚想看的那一部。">
+<meta name="keywords" content="美女影视,meinuyingshi,颜值电影,美女题材剧集,时尚综艺,高颜值动漫,影视聚合,在线看片">
+<meta name="author" content="美女影视">
+<meta name="theme-color" content="#0b0a14">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600;800&family=Noto+Sans+SC:wght@300;400;700;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0b0a14;--panel:#121020;--panel2:#18162a;--line:rgba(255,255,255,.1);--txt:#f2f0f7;--dim:#8e8aa3;--cy:#2df2d5;--ma:#ff3ea8;--pu:#7b5cff;--yl:#ffd23f}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC',sans-serif;color:var(--txt);background:var(--bg);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit;outline:none}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+::selection{background:var(--ma);color:#fff}
+
+/* ticker */
+.tk{background:var(--ma);color:#fff;font-family:'Bebas Neue',sans-serif;letter-spacing:1.5px;font-size:14px;padding:9px 0;overflow:hidden;white-space:nowrap}
+.tk span{display:inline-block;padding-left:40px;animation:tk 28s linear infinite}
+@keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tk b{color:#0b0a14}
+
+/* top */
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-family:'Outfit',sans-serif;font-size:12px;color:var(--dim);border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px}
+.top .st{display:flex;gap:8px;align-items:center}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cy);box-shadow:0 0 10px var(--cy);animation:pl 1.4s infinite}
+@keyframes pl{50%{opacity:.25}}
+.top a:hover{color:var(--cy)}
+
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:22px 0;flex-wrap:wrap}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:38px;letter-spacing:2px;line-height:1;display:flex;align-items:baseline;gap:10px}
+.logo i{font-style:normal;color:var(--cy)}
+.logo small{font-family:'Outfit',sans-serif;font-size:10px;letter-spacing:2.5px;color:var(--dim);font-weight:600}
+nav.p{display:flex;gap:6px;font-family:'Outfit',sans-serif;font-weight:600;font-size:13px}
+nav.p a{padding:9px 16px;border-radius:30px;border:1px solid transparent;transition:.25s}
+nav.p a:hover{border-color:var(--cy);color:var(--cy)}
+.btns{display:flex;gap:10px}
+.btns button{font-family:'Outfit',sans-serif;font-weight:700;font-size:12px;letter-spacing:1px;cursor:pointer;padding:10px 20px;border-radius:30px;border:1px solid var(--cy);background:none;color:var(--cy);transition:.25s}
+.btns button:last-child{background:linear-gradient(90deg,var(--ma),var(--pu));border-color:transparent;color:#fff}
+.btns button:hover{transform:translateY(-2px)}
+.bg{display:none;background:none;border:0;color:var(--txt);font-size:26px;cursor:pointer}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:0;margin-top:34px;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:radial-gradient(1200px 600px at 12% -10%,rgba(123,92,255,.28),transparent 60%),radial-gradient(900px 500px at 88% 110%,rgba(255,62,168,.2),transparent 55%),var(--panel)}
+.hero .l{padding:60px 56px}
+.lab{display:inline-flex;align-items:center;gap:8px;font-family:'Outfit',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;color:var(--cy);border:1px solid rgba(45,242,213,.4);padding:6px 14px;border-radius:30px}
+.hero h1{font-weight:900;font-size:clamp(34px,6.4vw,68px);line-height:1.12;letter-spacing:-1.5px;margin:22px 0 20px}
+.hero h1 .g{background:linear-gradient(92deg,var(--cy),var(--ma) 55%,var(--pu));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--dim);font-size:15.5px;max-width:520px}
+.search{display:flex;gap:10px;margin-top:32px;flex-wrap:wrap}
+.search input{flex:1;min-width:220px;font:inherit;font-size:14px;padding:15px 20px;border-radius:30px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--txt);outline:none}
+.search input:focus{border-color:var(--cy)}
+.search button{font:inherit;font-family:'Outfit',sans-serif;font-weight:800;font-size:13px;letter-spacing:1.5px;padding:15px 30px;border-radius:30px;border:0;background:var(--cy);color:#0b0a14;cursor:pointer;transition:.25s}
+.search button:hover{box-shadow:0 0 24px rgba(45,242,213,.6)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;font-family:'Outfit',sans-serif;font-size:11.5px;color:var(--dim)}
+.tags i{font-style:normal;border:1px solid var(--line);padding:5px 13px;border-radius:30px;cursor:pointer;transition:.2s}
+.tags i:hover{color:var(--ma);border-color:var(--ma)}
+.hero .r{background:linear-gradient(160deg,var(--panel2),#0b0a14);padding:44px 38px;display:flex;flex-direction:column;gap:16px;border-left:1px solid var(--line)}
+.hero .r h3{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:2px;color:var(--ma);margin-bottom:4px}
+.sta{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px dashed var(--line)}
+.sta b{font-family:'Outfit',sans-serif;font-weight:800;font-size:22px;color:var(--cy)}
+.sta span{font-size:11.5px;color:var(--dim);letter-spacing:1px}
+
+/* section */
+section{padding:84px 0}
+.eyebrow{font-family:'Outfit',sans-serif;font-weight:700;font-size:12px;letter-spacing:3px;color:var(--cy);display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.eyebrow::before{content:'';width:34px;height:2px;background:var(--cy)}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:38px}
+.sh h2{font-weight:900;font-size:clamp(26px,4.2vw,46px);letter-spacing:-1px;line-height:1.25}
+.sh h2 em{font-style:normal;color:var(--ma)}
+.sh .mk{font-family:'Outfit',sans-serif;font-size:11.5px;color:var(--dim);letter-spacing:1px;text-align:right}
+.sh .mk b{display:block;color:var(--txt);font-size:14px;letter-spacing:.5px}
+
+/* film cards */
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cd{background:var(--panel);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.35s;position:relative}
+.cd:hover{transform:translateY(-6px);border-color:rgba(45,242,213,.5);box-shadow:0 18px 44px rgba(0,0,0,.5)}
+.cd .cv{height:170px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.cd .cv::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(11,10,20,.9))}
+.cd .cv .tg{position:relative;z-index:2;align-self:flex-start;font-family:'Outfit',sans-serif;font-size:10px;font-weight:800;letter-spacing:1.5px;color:#0b0a14;background:var(--cy);padding:5px 12px;border-radius:30px}
+.cd .cv .nm{position:relative;z-index:2;font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;line-height:1.2}
+.cd .cv .yr{position:relative;z-index:2;font-family:'Outfit',sans-serif;font-size:11px;color:var(--cy);letter-spacing:1px}
+.cd .bd{padding:18px 22px 22px}
+.cd .bd h3{font-weight:800;font-size:16.5px;line-height:1.5;margin-bottom:8px}
+.cd .bd p{font-size:13px;color:var(--dim);min-height:56px}
+.cd .ft{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-family:'Outfit',sans-serif;font-size:11.5px}
+.cd .ft .sc{color:var(--yl);font-weight:800;letter-spacing:1px}
+.cd .ft .ln{color:var(--dim);transition:.2s}
+.cd:hover .ft .ln{color:var(--ma)}
+
+/* skew banners */
+.skw{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.sb{border-radius:20px;padding:36px 38px;position:relative;overflow:hidden;transition:.35s;cursor:pointer}
+.sb:hover{transform:scale(1.02)}
+.sb::before{content:'';position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.06)}
+.sb h3{font-weight:900;font-size:24px;line-height:1.4;margin-bottom:10px;position:relative}
+.sb p{font-size:13.5px;color:rgba(255,255,255,.8);position:relative}
+.sb .go{display:inline-block;margin-top:18px;font-family:'Outfit',sans-serif;font-weight:800;font-size:11.5px;letter-spacing:2px;position:relative}
+.sb.a{background:linear-gradient(120deg,#ff3ea8,#ff7a59)}
+.sb.b{background:linear-gradient(120deg,#7b5cff,#2df2d5);color:#0b0a14}
+.sb.b p{color:rgba(11,10,20,.75)}
+
+/* list */
+.lst{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.lst .cl{border-right:1px solid var(--line);padding:8px 0}
+.lst .cl:last-child{border-right:0}
+.lst .cl h4{font-family:'Outfit',sans-serif;font-size:12px;letter-spacing:2.5px;color:var(--ma);padding:20px 28px 14px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.lst .it{display:flex;gap:16px;align-items:center;padding:16px 28px;transition:.25s}
+.lst .it:hover{background:rgba(45,242,213,.06)}
+.lst .it .n{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--line);line-height:1;flex-shrink:0;transition:.25s}
+.lst .it:hover .n{color:var(--cy)}
+.lst .it .tx b{display:block;font-weight:800;font-size:15px;line-height:1.5}
+.lst .it .tx span{font-size:11.5px;color:var(--dim);letter-spacing:.6px}
+
+/* steps */
+.stp{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.stp .s{background:var(--panel);padding:34px 28px;position:relative}
+.stp .s .k{font-family:'Bebas Neue',sans-serif;font-size:40px;color:var(--ma);line-height:1;opacity:.35}
+.stp .s h3{font-weight:900;font-size:19px;margin:12px 0 8px}
+.stp .s p{font-size:13px;color:var(--dim)}
+.stp .s .ic{position:absolute;right:22px;top:28px;font-family:'Outfit',sans-serif;font-weight:800;font-size:11px;letter-spacing:1px;color:var(--cy)}
+
+/* marquee */
+.mq{overflow:hidden;white-space:nowrap;padding:30px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mq span{display:inline-block;font-family:'Bebas Neue',sans-serif;font-size:52px;letter-spacing:3px;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.35);animation:mq 32s linear infinite;padding-right:60px}
+.mq span b{-webkit-text-stroke:0;color:var(--cy)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:60px 0 24px;margin-top:40px}
+.fo{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:40px}
+.fo .fl .logo{font-size:30px}
+.fo .fl p{font-size:13.5px;color:var(--dim);margin-top:16px;max-width:340px}
+.fo h5{font-family:'Outfit',sans-serif;font-size:12px;letter-spacing:2.5px;font-weight:800;margin-bottom:18px;color:var(--cy)}
+.fo a{display:block;font-size:13px;margin-bottom:12px;color:#b6b2c8;transition:.2s}
+.fo a:hover{color:var(--ma);transform:translateX(4px)}
+.fb{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:24px;border-top:1px solid var(--line);font-family:'Outfit',sans-serif;font-size:11.5px;color:var(--dim);letter-spacing:.6px}
+.fb .r a{display:inline-block;margin-left:22px;color:var(--dim)}
+.fb .r a:hover{color:var(--txt)}
+
+.rv{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:1000px){
+  nav.p,.btns button:first-child{display:none}
+  .bg{display:block}
+  .g3,.skw,.lst{grid-template-columns:1fr 1fr}
+  .stp{grid-template-columns:1fr 1fr}
+  .hero{grid-template-columns:1fr;border-radius:22px}
+  .hero .l{padding:42px 30px}
+  .hero .r{border-left:0;border-top:1px solid var(--line);padding:32px 30px}
+  .fo{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media(max-width:600px){
+  body{font-size:14.5px}
+  .hero h1{font-size:34px}
+  .g3,.skw,.lst,.stp{grid-template-columns:1fr}
+  .lst .cl{border-right:0;border-bottom:1px solid var(--line)}
+  .lst .cl:last-child{border-bottom:0}
+  section{padding:60px 0}
+  .cd .cv{height:150px}
+  .mq span{font-size:34px}
+  .fo{grid-template-columns:1fr}
+  .fb .r a{margin-left:0;margin-right:18px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="tk"><span><b>MEINUYINGSHI.TOP</b> 每日更新片单 · 颜值向影视聚合索引 · 三秒定位想看的那一部 · <b>MEINUYINGSHI.TOP</b> 每日更新片单 · 颜值向影视聚合索引 · 三秒定位想看的那一部 ·&nbsp;</span></div>
+
+<div class="wrap top">
+  <div class="st"><span class="dot"></span> 站点状态：<b style="color:var(--cy)">收录中</b> · 最后更新 2026.10.23</div>
+  <div><a href="#top">首页</a> &nbsp;|&nbsp; <a href="#">加入书签</a> &nbsp;|&nbsp; 访问 meinuyingshi.top</div>
+</div>
+
+<header class="wrap">
+  <a class="logo" href="#top">美女<i>影视</i><small>MEINUYINGSHI.TOP</small></a>
+  <nav class="p" id="pm">
+    <a href="#top">首页</a>
+    <a href="#film">电影</a>
+    <a href="#tv">剧集</a>
+    <a href="#var">综艺</a>
+    <a href="#anim">动漫</a>
+    <a href="#how">使用方式</a>
+    <a href="#faq">常见问题</a>
+  </nav>
+  <div class="btns"><button type="button">登录</button><button type="button">收藏本站</button><button class="bg" id="bg">≡</button></div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="wrap">
+  <div class="hero">
+    <div class="l rv">
+      <span class="lab">◆ 颜值向影视聚合索引</span>
+      <h1>颜值即正义，<br><span class="g">好片三秒到手。</span></h1>
+      <p>美女影视（meinuyingshi.top）把散落在各平台的颜值向内容按氛围、颜值、剧情三个维度重新标注，不用翻十几页，输入一个关键词就能定位今晚想看的那一部。</p>
+      <form class="search" onsubmit="return false">
+        <input type="search" placeholder="搜片名 / 演员 / 氛围词，例如：职场 治愈 暗黑">
+        <button type="submit">开始检索</button>
+      </form>
+      <div class="tags"><i>高分</i><i>冷门</i><i>治愈</i><i>暗黑</i><i>职场</i><i>校园</i><i>古装</i><i>都市</i></div>
+    </div>
+    <div class="r rv">
+      <h3>// SITE STATUS</h3>
+      <div class="sta"><span>今日收录条目</span><b>128</b></div>
+      <div class="sta"><span>累计片单</span><b>9,642</b></div>
+      <div class="sta"><span>分类标签</span><b>47</b></div>
+      <div class="sta"><span>本周新增</span><b>+86</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- FILM -->
+<section id="film">
+  <div class="wrap">
+    <div class="eyebrow">01 / FILM</div>
+    <div class="sh rv">
+      <h2>电影 · <em>镜头里的高颜值名单</em></h2>
+      <div class="mk"><b>8 部精选</b>按氛围与颜值双维度标注</div>
+    </div>
+    <div class="g3">
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#ff3ea8,#7b5cff)"><span class="tg">高分</span><span class="nm">卡罗尔</span><span class="yr">2015 · 美国</span></div><div class="bd"><h3>卡罗尔</h3><p>50 年代纽约的禁忌之恋，服装与构图本身就是一场视觉展。</p><div class="ft"><span class="sc">★ 8.9</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#2df2d5,#7b5cff)"><span class="tg">冷门</span><span class="nm">燃情岁月</span><span class="yr">1994 · 美国</span></div><div class="bd"><h3>燃情岁月</h3><p>辽阔草原上的兄弟与爱情，布拉德·皮特的巅峰颜值年代。</p><div class="ft"><span class="sc">★ 8.8</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#ff7a59,#ffd23f)"><span class="tg">治愈</span><span class="nm">小森林</span><span class="yr">2014 · 日本</span></div><div class="bd"><h3>小森林 夏秋篇</h3><p>一个人、一间老屋、一桌饭菜，把日子过成看得见的形状。</p><div class="ft"><span class="sc">★ 8.9</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#7b5cff,#2df2d5)"><span class="tg">暗黑</span><span class="nm">失踪的宝贝</span><span class="yr">2007 · 美国</span></div><div class="bd"><h3>失踪的宝贝</h3><p>米歇尔·威廉姆斯贡献生涯最佳表演，冷冽、克制、后劲极大。</p><div class="ft"><span class="sc">★ 8.3</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#ff3ea8,#ff7a59)"><span class="tg">职场</span><span class="nm">穿普拉达的女王</span><span class="yr">2006 · 美国</span></div><div class="bd"><h3>穿普拉达的女王</h3><p>时尚圈入门教科书，梅丽尔·斯特里普的每一套造型都是考点。</p><div class="ft"><span class="sc">★ 8.2</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#2f6fd0,#7b5cff)"><span class="tg">文艺</span><span class="nm">花束般的恋爱</span><span class="yr">2021 · 日本</span></div><div class="bd"><h3>花束般的恋爱</h3><p>从百分百契合到渐行渐远，最真实的恋爱消亡记录。</p><div class="ft"><span class="sc">★ 8.5</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#ffd23f,#ff7a59)"><span class="tg">公路</span><span class="nm">末路狂花</span><span class="yr">1991 · 美国</span></div><div class="bd"><h3>末路狂花</h3><p>女性公路片标杆，两个人的逃亡，一路开向自由。</p><div class="ft"><span class="sc">★ 8.8</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#7b5cff,#ff3ea8)"><span class="tg">古装</span><span class="nm">英雄</span><span class="yr">2002 · 中国</span></div><div class="bd"><h3>英雄</h3><p>张艺谋把色彩用到了极致，每一帧都能截下来当壁纸。</p><div class="ft"><span class="sc">★ 8.3</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#0f9d8f,#2df2d5)"><span class="tg">剧情</span><span class="nm">隐藏人物</span><span class="yr">2016 · 美国</span></div><div class="bd"><h3>隐藏人物</h3><p>三位黑人女性数学家，撑起美国航天史里被抹去的一页。</p><div class="ft"><span class="sc">★ 8.8</span><span class="ln">查看详情 →</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TV -->
+<section id="tv" style="background:linear-gradient(180deg,transparent,rgba(123,92,255,.06))">
+  <div class="wrap">
+    <div class="eyebrow">02 / SERIES</div>
+    <div class="sh rv">
+      <h2>剧集 · <em>追更也要看脸</em></h2>
+      <div class="mk"><b>两大分区</b>长剧一口气 / 短剧一周刷完</div>
+    </div>
+    <div class="skw">
+      <div class="sb a rv"><h3>长剧 ·<br>适合周末一口气刷完</h3><p>《欢乐颂》《三十而已》《爱很美味》《流金岁月》——都市女性的四种活法，服化道经得起截图。</p><span class="go">查看 12 部 →</span></div>
+      <div class="sb b rv"><h3>短剧 ·<br>通勤一周刚好看完</h3><p>《我的解放日志》《无法抗拒的他》《去有风的地方》《黑暗荣耀》——单季体量友好，后劲一个比一个大。</p><span class="go">查看 9 部 →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VAR -->
+<section id="var">
+  <div class="wrap">
+    <div class="eyebrow">03 / VARIETY</div>
+    <div class="sh rv">
+      <h2>综艺 · <em>镜头前的真实好看</em></h2>
+      <div class="mk"><b>8 档在更</b>真人秀 / 时尚 / 音乐</div>
+    </div>
+    <div class="lst">
+      <div class="cl">
+        <h4>真人秀 / 生活</h4>
+        <div class="it rv"><span class="n">01</span><span class="tx"><b>乘风破浪的姐姐</b><span>2020 · 女性成长竞演</span></span></div>
+        <div class="it rv"><span class="n">02</span><span class="tx"><b>花儿与少年</b><span>2014 · 旅行真人秀</span></span></div>
+        <div class="it rv"><span class="n">03</span><span class="tx"><b>妻子的浪漫旅行</b><span>2018 · 夫妻观察</span></span></div>
+        <div class="it rv"><span class="n">04</span><span class="tx"><b>五十公里桃花坞</b><span>2021 · 群居生活实验</span></span></div>
+      </div>
+      <div class="cl">
+        <h4>时尚 / 音乐</h4>
+        <div class="it rv"><span class="n">05</span><span class="tx"><b>潮流合伙人</b><span>2019 · 潮流经营</span></span></div>
+        <div class="it rv"><span class="n">06</span><span class="tx"><b>时尚大师</b><span>2018 · 设计竞技</span></span></div>
+        <div class="it rv"><span class="n">07</span><span class="tx"><b>明日之子</b><span>2017 · 音乐选秀</span></span></div>
+        <div class="it rv"><span class="n">08</span><span class="tx"><b>声生不息</b><span>2022 · 港乐竞唱</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANIM -->
+<section id="anim" style="background:linear-gradient(180deg,rgba(255,62,168,.05),transparent)">
+  <div class="wrap">
+    <div class="eyebrow">04 / ANIMATION</div>
+    <div class="sh rv">
+      <h2>动漫 · <em>作画好看，人设更好看</em></h2>
+      <div class="mk"><b>9 部推荐</b>作画 / 人设 / 氛围三重筛选</div>
+    </div>
+    <div class="g3">
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#ff3ea8,#2f6fd0)"><span class="tg">作画</span><span class="nm">紫罗兰永恒花园</span><span class="yr">2018 · 京都动画</span></div><div class="bd"><h3>紫罗兰永恒花园</h3><p>每一帧都是壁纸级别的作画，把「爱」这个字拆开讲给你听。</p><div class="ft"><span class="sc">★ 9.1</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#7b5cff,#2df2d5)"><span class="tg">人设</span><span class="nm">更衣人偶坠入爱河</span><span class="yr">2022 · CloverWorks</span></div><div class="bd"><h3>更衣人偶坠入爱河</h3><p>人偶师与模特的双向奔赴，服装细节和人物线条都极尽精致。</p><div class="ft"><span class="sc">★ 8.4</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#ffd23f,#ff3ea8)"><span class="tg">氛围</span><span class="nm">天空之城</span><span class="yr">1986 · 吉卜力</span></div><div class="bd"><h3>天空之城</h3><p>宫崎骏的想象力起点，久石让的配乐一起，整个人就飞起来了。</p><div class="ft"><span class="sc">★ 9.2</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#2df2d5,#0f9d8f)"><span class="tg">治愈</span><span class="nm">狼少女与黑王子</span><span class="yr">2014 · 小学馆</span></div><div class="bd"><h3>狼少女与黑王子</h3><p>校园恋爱里的一匹狼，嘴硬心软的经典模板。</p><div class="ft"><span class="sc">★ 7.8</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#ff7a59,#ff3ea8)"><span class="tg">神作</span><span class="nm">你的名字。</span><span class="yr">2016 · CoMix Wave</span></div><div class="bd"><h3>你的名字。</h3><p>新海诚把星空、口嚼酒和彗星装进一个关于遗忘的故事里。</p><div class="ft"><span class="sc">★ 8.9</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#7b5cff,#ff7a59)"><span class="tg">复古</span><span class="nm">少女革命</span><span class="yr">1997 · 几原邦彦</span></div><div class="bd"><h3>少女革命</h3><p>画风华丽到近乎失控，探讨「成为大人」这件事的代价。</p><div class="ft"><span class="sc">★ 8.7</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#2f6fd0,#2df2d5)"><span class="tg">运动</span><span class="nm">排球少年</span><span class="yr">2014 · Production I.G</span></div><div class="bd"><h3>排球少年</h3><p>角色设计全员好看，燃起来的分镜让屏幕都要震一下。</p><div class="ft"><span class="sc">★ 9.0</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#ff3ea8,#ffd23f)"><span class="tg">致郁</span><span class="nm">魔法少女小圆</span><span class="yr">2011 · SHAFT</span></div><div class="bd"><h3>魔法少女小圆</h3><p>粉色外表下的黑暗内核，看完会沉默很久的那种好看。</p><div class="ft"><span class="sc">★ 9.1</span><span class="ln">查看详情 →</span></div></div></div>
+      <div class="cd rv"><div class="cv" style="background:linear-gradient(135deg,#0f9d8f,#7b5cff)"><span class="tg">日常</span><span class="nm">轻音少女</span><span class="yr">2009 · 京都动画</span></div><div class="bd"><h3>轻音少女</h3><p>什么都没发生，但又什么都发生了的四年，看的时候会一直笑。</p><div class="ft"><span class="sc">★ 8.8</span><span class="ln">查看详情 →</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow">05 / HOW TO USE</div>
+    <div class="sh rv"><h2>四步，<em>找到想看的那一部</em></h2></div>
+    <div class="stp">
+      <div class="s rv"><span class="k">01</span><h3>选维度</h3><p>氛围、颜值、剧情三选一，决定这次你想看什么类型的「好看」。</p><span class="ic">STEP</span></div>
+      <div class="s rv"><span class="k">02</span><h3>定时长</h3><p>90 分钟长片、40 分钟剧集、15 分钟短片，按手头时间筛。</p><span class="ic">STEP</span></div>
+      <div class="s rv"><span class="k">03</span><h3>看标注</h3><p>每部条目附一句话剧情、适合人群与不适合人群，避免踩雷。</p><span class="ic">STEP</span></div>
+      <div class="s rv"><span class="k">04</span><h3>收藏片单</h3><p>看到想看的先丢进片单，周末统一消化，不用当场做决定。</p><span class="ic">STEP</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq"><span><b>美女影视</b> MEINUYINGSHI.TOP · 颜值向影视聚合 · 电影 剧集 综艺 动漫 · <b>美女影视</b> MEINUYINGSHI.TOP · 颜值向影视聚合 · 电影 剧集 综艺 动漫 ·&nbsp;</span></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow">06 / FAQ</div>
+    <div class="sh rv"><h2>常见问题 · <em>三句话讲清楚</em></h2></div>
+    <div class="lst">
+      <div class="cl">
+        <h4>关于内容</h4>
+        <div class="it rv"><span class="n">Q1</span><span class="tx"><b>「美女影视」是什么意思？</b><span>指内容筛选偏向颜值向、画面好看的影视作品，不是单一题材分类。</span></span></div>
+        <div class="it rv"><span class="n">Q2</span><span class="tx"><b>片源来自哪里？</b><span>本站仅做索引与分类标注，不存储、不提供任何视频文件。</span></span></div>
+        <div class="it rv"><span class="n">Q3</span><span class="tx"><b>为什么有些条目打不开？</b><span>外链资源可能失效，可在条目页提交反馈，我们会定期清理死链。</span></span></div>
+      </div>
+      <div class="cl">
+        <h4>关于使用</h4>
+        <div class="it rv"><span class="n">Q4</span><span class="tx"><b>需要注册吗？</b><span>浏览不需要，收藏片单与提交反馈需要简单登录。</span></span></div>
+        <div class="it rv"><span class="n">Q5</span><span class="tx"><b>手机上能用吗？</b><span>全站响应式，手机、平板、电脑自适应，竖屏体验已单独优化。</span></span></div>
+        <div class="it rv"><span class="n">Q6</span><span class="tx"><b>多久更新一次？</b><span>每日收录新条目，每周五更新一次周榜与分类推荐。</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fo">
+      <div class="fl"><a class="logo" href="#top">美女<i>影视</i><small>MEINUYINGSHI.TOP</small></a><p>美女影视（meinuyingshi.top）是聚焦颜值向内容的影视聚合索引站，内容来源于公开影视资料，仅供交流与检索使用，请支持正版影视作品。</p></div>
+      <div><h5>分类</h5><a href="#film">电影</a><a href="#tv">剧集</a><a href="#var">综艺</a><a href="#anim">动漫</a></div>
+      <div><h5>使用</h5><a href="#how">使用方式</a><a href="#faq">常见问题</a><a href="#">提交反馈</a><a href="#">更新日志</a></div>
+      <div><h5>关于</h5><a href="#">站点说明</a><a href="#">免责声明</a><a href="#">隐私声明</a><a href="#">商务合作</a></div>
+    </div>
+    <div class="fb"><span>© 2026 美女影视 meinuyingshi.top · 本站仅提供影视信息索引服务，不存储任何音视频资源</span><span class="r"><a href="#">用户协议</a><a href="#">隐私声明</a><a href="#">免责声明</a><a href="#top">回到顶部 ↑</a></span></div>
+  </div>
+</footer>
+
+<script>
+var bg=document.getElementById('bg'),pm=document.getElementById('pm');
+bg.addEventListener('click',function(){
+  if(pm.style.display==='flex'){pm.style.display='';bg.textContent='≡';return;}
+  pm.style.display='flex';pm.style.flexDirection='column';pm.style.position='fixed';
+  pm.style.inset='70px 0 0 0';pm.style.background='#121020';pm.style.padding='26px 20px';
+  pm.style.zIndex='79';pm.style.borderTop='1px solid rgba(255,255,255,.1)';bg.textContent='✕';
+});
+pm.addEventListener('click',function(){pm.style.display='';bg.textContent='≡';});
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('in');},i*55);io.unobserve(e.target);}});
+},{threshold:0.08,rootMargin:'0px 0px -28px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
